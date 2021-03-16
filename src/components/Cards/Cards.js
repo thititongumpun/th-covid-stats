@@ -25,3 +25,4 @@ const Info = ({ data: {Confirmed} }) => {
     );
 }
 
+export default Info;

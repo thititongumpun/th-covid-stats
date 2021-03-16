@@ -3,6 +3,8 @@ import React from 'react';
 
 import { fetchData } from './api/index';
 
+import { Cards } from './components';
+
 class App extends React.Component {
   state = {
     data: {},
@@ -22,6 +24,7 @@ class App extends React.Component {
     return (
       <div>
         <p>TEST</p>
+        <Cards data={data} />
       </div>
     );
   }

@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 import styles from './Card.module.css';
 
-export const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }) => (
+const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }) => (
   <Grid item xs={12} md={3} component={Card} className={cx(styles.card, className)}>
     <CardContent>
       <Typography color="textSecondary" gutterBottom>
@@ -22,4 +22,6 @@ export const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSub
       </Typography>
     </CardContent>
   </Grid>
-)
+);
+
+export default CardComponent;
