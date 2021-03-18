@@ -4,7 +4,7 @@ import CardComponent from './Card/Card';
 import styles from './Cards.module.css'
 
 
-const Info = ({ data: {Confirmed, NewConfirmed, UpdateDate } }) => {
+const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospitalized, Hospitalized} }) => {
   if (!Confirmed) {
     return 'Loading...';
   }
@@ -17,15 +17,37 @@ const Info = ({ data: {Confirmed, NewConfirmed, UpdateDate } }) => {
           className={styles.infected}
           cardTitle="ติดเชื้อสะสม"
           value={Confirmed}
-          lastUpdate={UpdateDate}
           cardSubtitle="Number of active cases from COVID-19."
         />
         <CardComponent
-          className={styles.recovered}
-          cardTitle="NewConfirmed"
+          className={styles.currentInfected}
+          cardTitle="ติดเชื้อวันนี้"
           value={NewConfirmed}
-          // lastUpdate={lastUpdate}
           cardSubtitle="Number of today active cases from COVID-19."
+        />
+        <CardComponent
+          className={styles.deaths}
+          cardTitle="เสียชีวิต"
+          value={NewDeaths}
+          cardSubtitle="Number of today death cases from COVID-19."
+        />
+        <CardComponent
+          className={styles.recovered}
+          cardTitle="หายแล้ว"
+          value={Recovered}
+          cardSubtitle="Number of today death cases from COVID-19."
+        />
+        <CardComponent
+          className={styles.hospital}
+          cardTitle="รักษาอยู่ใน รพ."
+          value={Hospitalized}
+          cardSubtitle="Number of today death cases from COVID-19."
+        />
+        <CardComponent
+          className={styles.hospitaled}
+          cardTitle="รักษาอยู่ใน รพ วันนี้."
+          value={NewHospitalized}
+          cardSubtitle="Number of today death cases from COVID-19."
         />
       </Grid>
     </div>

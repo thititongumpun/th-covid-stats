@@ -9,10 +9,26 @@
     border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
 
+.currentInfected {
+    border-bottom: 10px solid rgba(243, 8, 173, 0.5);
+}
+
 .recovered {
     border-bottom: 10px solid rgba(0, 255, 0, 0.5);
 }
 
 .deaths {
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+.recovered {
+    border-bottom: 10px solid rgba(84, 241, 234, 0.5);
+}
+
+.hospital {
+    border-bottom: 10px solid rgba(255, 180, 82, 0.5);
+}
+
+.hospitaled {
+    border-bottom: 10px solid rgba(136, 77, 247, 0.5);
 }
