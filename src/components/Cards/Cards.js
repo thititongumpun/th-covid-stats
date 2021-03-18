@@ -45,7 +45,7 @@ const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospita
         />
         <CardComponent
           className={styles.hospitaled}
-          cardTitle="รักษาอยู่ใน รพ วันนี้."
+          cardTitle="รักษาหาย"
           value={NewHospitalized}
           cardSubtitle="Number of today death cases from COVID-19."
         />

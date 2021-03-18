@@ -1,9 +1,10 @@
-import './App.css';
 import React from 'react';
+
+import styles from './App.module.css';
 
 import { fetchData } from './api/index';
 
-import { Cards } from './components';
+import { Cards, Chart } from './components';
 
 class App extends React.Component {
   state = {
@@ -20,8 +21,9 @@ class App extends React.Component {
     const { data } = this.state;
 
     return (
-      <div>
+      <div className={styles.container}>
         <Cards data={data} />
+        <Chart data={data} /> 
       </div>
     );
   }
