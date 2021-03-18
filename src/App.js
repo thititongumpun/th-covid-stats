@@ -23,8 +23,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <p>TEST</p>
-        <h1>Wait for fix</h1>
         <Cards data={data} />
       </div>
     );

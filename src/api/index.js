@@ -6,7 +6,7 @@ export const fetchData = async () => {
   try {
     const { data } = await axios.get(apiPath);
     console.log(JSON.stringify(data));
-    return data.map(({covid}) => ({Confirmed: covid}));
+    return data
   } catch (e) {
     return e;
   }
