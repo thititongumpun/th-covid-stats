@@ -7,9 +7,7 @@ import { Cards } from './components';
 
 class App extends React.Component {
   state = {
-    data: {},
-    error: null,
-    isLoading: false
+    data: {}
   }
 
   async componentDidMount() {
