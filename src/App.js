@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { data, error, isLoading } = this.state;
+    const { data } = this.state;
 
     return (
       <div>
