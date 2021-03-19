@@ -35,23 +35,23 @@ const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospita
           className={styles.recovered}
           cardTitle="หายแล้ว"
           value={Recovered}
-          cardSubtitle="Number of today death cases from COVID-19."
+          cardSubtitle="Number of today recover cases from COVID-19."
         />
         <CardComponent
           className={styles.hospital}
           cardTitle="รักษาอยู่ใน รพ."
           value={Hospitalized}
-          cardSubtitle="Number of today death cases from COVID-19."
+          cardSubtitle="Number of today Hospitalized cases from COVID-19."
         />
         <CardComponent
           className={styles.hospitaled}
           cardTitle="รักษาหาย"
           value={NewHospitalized}
-          cardSubtitle="Number of today death cases from COVID-19."
+          cardSubtitle="Number of today recovered cases from COVID-19."
         />
       </Grid>
     </div>
-    );
+  );
 }
 
 export default Info;
