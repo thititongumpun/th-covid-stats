@@ -3,10 +3,17 @@ import { Typography, Grid } from '@material-ui/core';
 import CardComponent from './Card/Card';
 import styles from './Cards.module.css'
 
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospitalized, Hospitalized} }) => {
   if (!Confirmed) {
-    return 'Loading...';
+    return <Loader className="svgMain"
+            type="Plane"
+            color="#7B68EE"
+            height={500}
+            width={500}
+          />
   }
 
   return (

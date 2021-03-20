@@ -5,6 +5,7 @@ import cx from 'classnames';
 
 import styles from './Card.module.css';
 
+
 const CardComponent = ({ className, cardTitle, value, cardSubtitle }) => (
   <Grid item xs={12} md={3} component={Card} className={cx(styles.card, className)}>
     <CardContent>
