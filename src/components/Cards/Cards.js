@@ -8,12 +8,19 @@ import Loader from "react-loader-spinner";
 
 const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospitalized, Hospitalized} }) => {
   if (!Confirmed) {
-    return <Loader className="svgMain"
-            type="Plane"
-            color="#7B68EE"
-            height={500}
-            width={500}
-          />
+    return (
+      <div>
+        <Loader className="svgMain"
+          type="Plane"
+          color="#7B68EE"
+          height={500}
+          width={500}
+        />
+        <Typography variant="h4" component="h2">
+          Sorry api is closing today.
+        </Typography>
+      </div>
+    );
   }
 
   return (
