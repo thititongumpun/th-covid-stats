@@ -19,15 +19,15 @@
 }
 
 .recovered {
-    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    border-bottom: 10px solid rgba(194, 22, 179, 0.5);
 }
 
 .deaths {
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
 }
 
-.recovered {
-    border-bottom: 10px solid rgba(84, 241, 234, 0.5);
+.currentRecovered {
+    border-bottom: 10px solid rgba(0, 143, 7, 0.5);
 }
 
 .hospital {
@@ -35,5 +35,5 @@
 }
 
 .hospitaled {
-    border-bottom: 10px solid rgba(136, 77, 247, 0.5);
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
 }
