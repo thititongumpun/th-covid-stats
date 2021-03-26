@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Grid } from '@material-ui/core';
+import {LinearProgress} from '@material-ui/core';
 import CardComponent from './Card/Card';
 import styles from './Cards.module.css'
 
@@ -17,7 +18,7 @@ const Info = ({ data: {Confirmed, NewConfirmed, NewDeaths, Recovered, NewHospita
           width={500}
         />
         <Typography variant="h4" component="h2">
-          Sorry api is closing today.
+          <LinearProgress />
         </Typography>
       </div>
     );
